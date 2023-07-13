@@ -1,0 +1,76 @@
+/* Tela pequena (smartphones) */
+@media screen and (max-width: 499px) {
+  /* Estilos para telas com largura até 576px */
+}
+
+/* Tela média (tablets) */
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  /* Estilos para telas com largura entre 577px e 768px */
+}
+
+/* Tela média/grande (laptops e desktops) */
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+  /* Estilos para telas com largura entre 769px e 1200px */
+
+  img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .produto-item {
+    width: 15vw;
+  }
+
+  .produto-imagem {
+    width: 185px;
+    height: 185px;
+  }
+
+  .produto-nome {
+    width: 13.5vw;
+    font-size: 0.9vw;
+  }
+
+  .produto-preco {
+    margin-top: 5px;
+    color: #888;
+  }
+
+  .tituloProd {
+    font-size: 1.5rem;
+  }
+
+  aside {
+    width: 16vw;
+  }
+
+  .product {
+    margin-right: 0.5vw;
+  }
+
+  .product img {
+    width: 12vw;
+  }
+
+  .product p {
+    font-size: 1vw;
+  }
+
+  .content2 {
+    gap: 5.5vw;
+  }
+
+  .baner {
+    height: 39.5vw;
+  }
+
+  .roww {
+    padding: 0vw 9.5vw;
+  }
+
+}
+
+/* Tela grande (monitores grandes) */
+@media screen and (min-width: 1200px) {
+  /* Estilos para telas com largura acima de 1200px */
+}
