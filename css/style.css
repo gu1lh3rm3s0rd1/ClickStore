@@ -2,6 +2,23 @@
   font-family: sans-serif;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.svg {
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='%23FFFFFF' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f6fbf6' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23edf7ed' cx='50' cy='100' r='50'/%3E%3Cg fill='%23e4f3e5' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dbefdc' cx='50' cy='200' r='50'/%3E%3Cg fill='%23d2ebd3' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c9e7ca' cx='50' cy='300' r='50'/%3E%3Cg fill='%23c0e4c1' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b7e0b8' cx='50' cy='400' r='50'/%3E%3Cg fill='%23aedcb0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a5d8a7' cx='50' cy='500' r='50'/%3E%3Cg fill='%239cd49e' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2393d095' cx='50' cy='600' r='50'/%3E%3Cg fill='%238acc8c' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2381c883' cx='50' cy='700' r='50'/%3E%3Cg fill='%2378c47b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%236fc072' cx='50' cy='800' r='50'/%3E%3Cg fill='%2366bc69' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%235cb860' cx='50' cy='900' r='50'/%3E%3Cg fill='%2353b457' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%234CAF50' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.white {
+  color: #fff;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -128,7 +145,6 @@ h2 {
 }
 
 .product:hover {
-  /* background-color: #e0e0e0; */
   background-color: #4caf50;
 }
 
@@ -148,7 +164,7 @@ h2 {
 }
 
 .background {
-  background-color: #4caf50;
+  background-color: black;
   color: #fff;
   gap: 20vw;
 }
@@ -164,6 +180,7 @@ h2 {
 main {
   display: flex;
   flex: 1;
+  margin-bottom: 6vw;
 }
 
 #baner {
@@ -237,7 +254,7 @@ input[type="checkbox"] {
   display: flex;
   overflow-x: auto;
   margin: 0vw 3vw;
-  margin-bottom: 1.5rem;
+  margin-bottom: 6vw;
 }
 
 .produto-item {
@@ -263,11 +280,13 @@ input[type="checkbox"] {
 
 .produto-nome {
   margin-top: 10px;
-  font-weight: bold;
   width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-style: italic;
+  font-family: system-ui;
+  font-weight: 600;
 }
 
 .produto-preco {
@@ -276,11 +295,12 @@ input[type="checkbox"] {
 }
 
 .tituloProd {
-  margin-top: 6vw;
-  font-size: 2rem;
+  margin-top: 1.5rem;
+  font-size: 3rem;
   margin-right: auto;
   text-align: start;
   margin-left: 4vw;
+  font-family: fantasy;
 }
 
 .mg-top-03 {
@@ -333,4 +353,32 @@ input[type="checkbox"] {
 
 .bg-white {
   background-color: #fff;
+}
+
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Estilizando o track (trilha) da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Cor de fundo do track */
+}
+
+/* Estilizando o thumb (alça) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Cor do thumb */
+  border-radius: 4px; /* Raio de borda do thumb */
+}
+
+/* Mudando a aparência do thumb quando está sendo arrastado */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor do thumb ao passar o mouse */
+}
+
+/* Mudando a aparência do thumb quando está sendo arrastado */
+::-webkit-scrollbar-thumb:active {
+  background-color: #333; /* Cor do thumb ao clicar */
 }

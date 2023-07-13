@@ -22,34 +22,37 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
+    #scroll-span {
+      display: inline-block;
+      animation: scrollAnimation 2s infinite;
+      font-size: 24px;
+      /* Tamanho do texto */
+      width: 30px;
+      /* Largura do span */
+      height: 30px;
+      /* Altura do span */
+      line-height: 30px;
+      /* Centralizar verticalmente o texto */
+      text-align: center;
+      /* Centralizar horizontalmente o texto */
+      color: #000000;
+      /* Cor do texto */
+      cursor: pointer;
+      /* Cursor de apontar */
     }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+    @keyframes scrollAnimation {
+      0% {
+        transform: translateY(0);
       }
-    }
 
-    .b-example-divider {
-      width: 100%;
-      height: 3rem;
-      background-color: rgba(0, 0, 0, 0.1);
-      border: solid rgba(0, 0, 0, 0.15);
-      border-width: 1px 0;
-      box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-        inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-    }
+      50% {
+        transform: translateY(20px);
+      }
 
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
+      100% {
+        transform: translateY(0);
+      }
     }
 
     .bi {
@@ -57,14 +60,7 @@
       fill: currentColor;
     }
 
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
+    .nav {
       display: flex;
       flex-wrap: nowrap;
       padding-bottom: 1rem;
@@ -73,26 +69,6 @@
       text-align: center;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
-    }
-
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
-
-    .bd-mode-toggle {
-      z-index: 1500;
     }
   </style>
 </head>
@@ -134,69 +110,67 @@
     </symbol>
   </svg>
 
-  <nav class="navbar-expand-md sticky-top border-bottom background pd-gui">
-    <div class="container">
-      <a class="navbar-brand d-md-none" href="#">
-        <svg class="bi" width="24" height="24">
-          <use xlink:href="#aperture" />
-        </svg>
-        <!-- Aperture -->
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-        aria-controls="#offcanvas" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="#offcanvasLabel">
-            <!-- Aperture -->
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body" style="align-items: center; text-align: center">
-          <ul class="navbar-nav flex-grow-1 justify-content-xl-start">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <svg class="bi" width="24" height="24">
-                  <use xlink:href="#aperture" />
-                </svg></a>
-            </li>
-          </ul>
-          <ul class="navbar-nav flex-grow-1 justify-content-between">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="search.html">Produtos</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Suporte</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-          </ul>
-          <ul class="navbar-nav flex-grow-1 justify-content-xl-end">
-            <form id="busca" class="mg-top-03 mg-right-1">
-              <input class="b-left-radius-1 w-23 pd-left-2 no-border no-outline mg-right-0" type="text" name="input"
-                id="input" placeholder="Digite o produto que deseja pesquisar" />
-              <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-white no-outline">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-            <!-- <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-white no-outline"
+  <header>
+    <nav class="navbar-expand-md sticky-top border-bottom background pd-gui">
+      <div class="container">
+        <a class="navbar-brand d-md-none" href="#">
+          <svg class="bi" width="24" height="24">
+            <use xlink:href="#aperture" />
+          </svg>
+          <!-- Aperture -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+          aria-controls="#offcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="#offcanvasLabel">
+              <!-- Aperture -->
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body white" style="align-items: center; text-align: center">
+            <ul class="navbar-nav flex-grow-1 justify-content-xl-start">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#aperture" />
+                  </svg></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-grow-1 justify-content-between">
+              <li class="nav-item"><a class="nav-link" href="#menu">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#produto">Produtos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Suporte</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+            <ul class="navbar-nav flex-grow-1 justify-content-xl-end">
+              <form id="busca" class="mg-top-03 mg-right-1">
+                <input class="b-left-radius-1 w-23 pd-left-2 no-border no-outline mg-right-0" type="text" name="input"
+                  id="input" placeholder="Digite o produto que deseja pesquisar" />
+                <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-white no-outline">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+              <!-- <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-white no-outline"
                  onclick="pesquisar()"><i class="fas fa-search"></i></button>  -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <svg class="bi" width="24" height="24">
-                  <use xlink:href="#cart" />
-                </svg></a>
-            </li>
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#cart" />
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <main>
-    <div id="baner" class="position-relative overflow-hidden text-center bg-body-tertiary baner">
+  <main id="menu">
+    <div id="baner" class="position-relative overflow-hidden text-center bg-body-tertiary baner svg">
       <div class="col-md-6 p-lg-5 mx-auto my-5">
         <h1 class="display-3 fw-bold">Designed for engineers</h1>
         <h3 class="fw-normal text-muted mb-3">
@@ -212,8 +186,7 @@
             </svg></a>
         </div>
       </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      <span id="scroll-span" width="24" height="24">&#8595;</span>
     </div>
   </main>
 
@@ -763,15 +736,15 @@
     document
       .getElementById("busca")
       .addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+        event.preventDefault();
 
         document.getElementById("produto").style.display = "none";
       });
 
-      document
+    document
       .getElementById("busca")
       .addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+        event.preventDefault();
 
         document.getElementById("baner").style.display = "none";
       });
@@ -779,16 +752,16 @@
     $(document).ready(function () {
       $(".produto-nome").hover(
         function () {
-          // Mostrar a descrição completa
           $(this).css("white-space", "normal");
           $(this).css("overflow", "visible");
           $(this).css("text-overflow", "initial");
+
         },
         function () {
-          // Restaurar quando o mouse sai
           $(this).css("white-space", "nowrap");
           $(this).css("overflow", "hidden");
           $(this).css("text-overflow", "ellipsis");
+
         }
       );
     });
@@ -799,7 +772,21 @@
       //   window.location.href = "search.html?valor=" + encodeURIComponent(valorInput);
 
       // }
+
   </script>
+
+  <script>
+    var scrollSpan = document.getElementById('scroll-span');
+
+    scrollSpan.addEventListener('click', function () {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+
 </body>
 
 </html>
