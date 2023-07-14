@@ -8,8 +8,16 @@
   left: 0;
 }
 
+.rmv-st {
+  list-style: none;
+}
+
+.mg-gui {
+  margin-bottom: 6vw;
+}
+
 .svg {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='%23FFFFFF' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f6fbf6' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23edf7ed' cx='50' cy='100' r='50'/%3E%3Cg fill='%23e4f3e5' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dbefdc' cx='50' cy='200' r='50'/%3E%3Cg fill='%23d2ebd3' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c9e7ca' cx='50' cy='300' r='50'/%3E%3Cg fill='%23c0e4c1' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b7e0b8' cx='50' cy='400' r='50'/%3E%3Cg fill='%23aedcb0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a5d8a7' cx='50' cy='500' r='50'/%3E%3Cg fill='%239cd49e' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2393d095' cx='50' cy='600' r='50'/%3E%3Cg fill='%238acc8c' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2381c883' cx='50' cy='700' r='50'/%3E%3Cg fill='%2378c47b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%236fc072' cx='50' cy='800' r='50'/%3E%3Cg fill='%2366bc69' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%235cb860' cx='50' cy='900' r='50'/%3E%3Cg fill='%2353b457' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%234CAF50' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: contain;
@@ -17,6 +25,10 @@
 
 .white {
   color: #fff;
+}
+
+.font {
+  font-style: italic;
 }
 
 h1,
@@ -351,34 +363,85 @@ input[type="checkbox"] {
   padding-right: 1vw;
 }
 
-.bg-white {
+.bg-whitee {
   background-color: #fff;
 }
+
+
 
 /* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
 
 /* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {
-  width: 8px; /* Largura da barra de rolagem */
+  width: 8px;
 }
 
-/* Estilizando o track (trilha) da barra de rolagem */
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Cor de fundo do track */
+  background-color: #f1f1f1;
 }
 
-/* Estilizando o thumb (alça) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* Cor do thumb */
-  border-radius: 4px; /* Raio de borda do thumb */
+  background-color: #888;
+  border-radius: 4px;
 }
 
-/* Mudando a aparência do thumb quando está sendo arrastado */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Cor do thumb ao passar o mouse */
+  background-color: #555;
 }
 
-/* Mudando a aparência do thumb quando está sendo arrastado */
 ::-webkit-scrollbar-thumb:active {
-  background-color: #333; /* Cor do thumb ao clicar */
+  background-color: #333;
 }
+
+#scroll-span {
+  display: inline-block;
+  animation: scrollAnimation 2s infinite;
+  font-size: 40px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -21,56 +21,6 @@
     integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <style>
-    #scroll-span {
-      display: inline-block;
-      animation: scrollAnimation 2s infinite;
-      font-size: 24px;
-      /* Tamanho do texto */
-      width: 30px;
-      /* Largura do span */
-      height: 30px;
-      /* Altura do span */
-      line-height: 30px;
-      /* Centralizar verticalmente o texto */
-      text-align: center;
-      /* Centralizar horizontalmente o texto */
-      color: #000000;
-      /* Cor do texto */
-      cursor: pointer;
-      /* Cursor de apontar */
-    }
-
-    @keyframes scrollAnimation {
-      0% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(20px);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    .bi {
-      vertical-align: -0.125em;
-      fill: currentColor;
-    }
-
-    .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-  </style>
 </head>
 
 <body>
@@ -113,11 +63,10 @@
   <header>
     <nav class="navbar-expand-md sticky-top border-bottom background pd-gui">
       <div class="container">
-        <a class="navbar-brand d-md-none" href="#">
+        <a class="navbar-brand d-md-none" href="index.html">
           <svg class="bi" width="24" height="24">
             <use xlink:href="#aperture" />
           </svg>
-          <!-- Aperture -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
           aria-controls="#offcanvas" aria-label="Toggle navigation">
@@ -125,13 +74,10 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="#offcanvasLabel">
-              <!-- Aperture -->
-            </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body white" style="align-items: center; text-align: center">
-            <ul class="navbar-nav flex-grow-1 justify-content-xl-start">
+          <div class="offcanvas-body white">
+            <ul class="navbar-nav flex-grow-1 justify-content-around">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">
                   <svg class="bi" width="24" height="24">
@@ -146,25 +92,21 @@
               <li class="nav-item"><a class="nav-link" href="#">Suporte</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
             </ul>
-            <ul class="navbar-nav flex-grow-1 justify-content-xl-end">
-              <form id="busca" class="mg-top-03 mg-right-1">
-                <input class="b-left-radius-1 w-23 pd-left-2 no-border no-outline mg-right-0" type="text" name="input"
-                  id="input" placeholder="Digite o produto que deseja pesquisar" />
-                <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-white no-outline">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-              <!-- <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-white no-outline"
-                 onclick="pesquisar()"><i class="fas fa-search"></i></button>  -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#cart" />
-                  </svg></a>
-              </li>
-            </ul>
           </div>
         </div>
+        <form id="busca" class="">
+          <input class="b-left-radius-1 w-23 pd-left-2 no-border no-outline mg-right-0" type="text" name="input"
+            id="input" placeholder="Digite o produto que deseja pesquisar" />
+          <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-whitee no-outline">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <li class="nav-item rmv-st">
+          <a class="nav-link" href="#">
+            <svg class="bi" width="24" height="24">
+              <use xlink:href="#cart" />
+            </svg></a>
+        </li>
       </div>
     </nav>
   </header>
@@ -172,21 +114,23 @@
   <main id="menu">
     <div id="baner" class="position-relative overflow-hidden text-center bg-body-tertiary baner svg">
       <div class="col-md-6 p-lg-5 mx-auto my-5">
-        <h1 class="display-3 fw-bold">Designed for engineers</h1>
-        <h3 class="fw-normal text-muted mb-3">
-          Build anything you want with Aperture
+        <h1 class="display-3 fw-bold mg-gui font">
+          # Nome da loja
+        </h1>
+        <h3 class="fw-normal text-muted mb-3 font">
+          Bem-vindo à nossa loja online! Aqui você encontrará uma ampla seleção de produtos de alta qualidade.
         </h3>
 
-        <div class="d-flex gap-3 justify-content-center lead fw-normal">
-          <a class="icon-link" href="#">Learn more<svg class="bi">
+        <div class="d-flex gap-3 justify-content-center lead fw-normal mg-gui">
+          <a class="icon-link font" href="#"># Destaques<svg class="bi">
               <use xlink:href="#chevron-right" />
             </svg></a>
-          <a class="icon-link" href="search.html">Buy<svg class="bi">
+          <a class="icon-link font" href="#"># Produto #1<svg class="bi">
               <use xlink:href="#chevron-right" />
             </svg></a>
         </div>
       </div>
-      <span id="scroll-span" width="24" height="24">&#8595;</span>
+      <span id="scroll-span">&#8595;</span>
     </div>
   </main>
 
@@ -565,6 +509,11 @@
   </div>
 
   <div id="conteudo" class="content">
+    <a class="button" href="index.html">
+      <span class="button-arrow reverse"></span>
+      Voltar
+    </a>
+
     <div class="content2">
       <div class="sidebar">
         <aside>
@@ -766,16 +715,6 @@
       );
     });
 
-      // function pesquisar() {
-      //   var valorInput = document.getElementById("input").value;
-      //   // Redirecionar para a segunda página, passando o valor como parâmetro na URL
-      //   window.location.href = "search.html?valor=" + encodeURIComponent(valorInput);
-
-      // }
-
-  </script>
-
-  <script>
     var scrollSpan = document.getElementById('scroll-span');
 
     scrollSpan.addEventListener('click', function () {
@@ -785,7 +724,6 @@
       });
     });
   </script>
-
 
 </body>
 

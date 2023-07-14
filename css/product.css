@@ -1,5 +1,10 @@
 .container {
   max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .rodape {
