@@ -4,8 +4,10 @@ ClickStore é um projeto que combina HTML, CSS, JavaScript e a API do Mercado Li
 
 ## Funcionalidades
 
-    - Pesquisa de produtos: Os usuários podem pesquisar produtos digitando palavras-chave no campo de pesquisa.
-    - Listagem de produtos: Os resultados da pesquisa são exibidos em uma lista com imagens, nomes e preços dos produtos.
+    - Pesquisa de produtos: 
+        - Os usuários podem pesquisar produtos digitando palavras-chave no campo de pesquisa.
+    - Listagem de produtos: 
+        - Os resultados da pesquisa são exibidos em uma lista com imagens, nomes e preços dos produtos.
     
 ## Link do Projeto
 [Confira o Projeto](https://clickstore.netlify.app/)
