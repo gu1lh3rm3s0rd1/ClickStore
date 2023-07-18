@@ -14,6 +14,7 @@
 
   .wd-gui {
     width: 100%;
+    margin-top: 3.5vw;
   }
 
   .container {
@@ -34,21 +35,22 @@
   }
 
   .produto-item {
-    width: 60vw;
+    width: 272px;
   }
 
   .produto-nome {
-    width: 55.5vw;
+    width: auto;
+    margin-top: 0;
   }
 
-  .produto-imagem {
+  /* .produto-imagem {
     width: 230px;
     height: 200px;
-  }
+  } */
 
-  .produto-preco {
+  /* .produto-preco {
     font-size: 3vw;
-  }
+  } */
 
   .tituloProd {
     font-size: 1.5rem;
@@ -160,6 +162,13 @@
     margin-right: 3vw;
   }
 
+  .product p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 220px;
+  }
+
   main {
     display: none;
   }
@@ -200,6 +209,7 @@
     align-items: center;
     margin-top: 4vw;
   }
+
 }
 
 /* Tela média (tablets) */
@@ -230,7 +240,7 @@
   }
 
   .produto-nome {
-    width: 28.5vw;
+    width: 32.5vw;
     font-size: 2vw;
   }
 
@@ -243,11 +253,11 @@
   }
 
   #busca {
-    width: 65vw;
+    width: 80vw;
   }
 
   #input {
-    width: 50vw;
+    width: 65vw;
   }
 
   .mg-top-03 {
@@ -366,7 +376,8 @@
     margin: 20px;
   }
 
-  .hidden {
+  .hidden,
+  .hd-gui {
     display: none;
   }
 
@@ -387,12 +398,25 @@
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .roww {
+    padding: 0vw 8vw;
+  }
+
+  fontt {
+    font-size: 1.1rem;
+  }
+
 }
 
 /* Tela média/grande (laptops e desktops) */
-@media screen and (min-width: 768px) and (max-width: 1400px) {
+@media screen and (min-width: 769px) and (max-width: 1400px) {
   #scroll-span {
     font-size: 25px;
+  }
+
+  #busca {
+    margin-left: 3vw;
   }
 
   .mg-gui {

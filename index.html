@@ -12,7 +12,7 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="shortcut icon" href="img/shopping-cart.png" type="image/x-icon">
-  <title>Document</title>
+  <title>ClickStore</title>
 
   <script src="js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -69,10 +69,6 @@
             <use xlink:href="#aperture" />
           </svg>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-          aria-controls="#offcanvas" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
           <div class="offcanvas-header">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -86,21 +82,23 @@
                   </svg></a>
               </li>
             </ul>
-            <ul class="navbar-nav flex-grow-1 justify-content-between">
-              <li class="nav-item"><a class="nav-link" href="#menu">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#produto">Produtos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Suporte</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            <ul class="hd-gui navbar-nav flex-grow-1 justify-content-between">
+              <li class="hd-gui nav-item"><a class="nav-link" href="#menu">Home</a></li>
+              <li class="hd-gui nav-item"><a class="nav-link" href="#produto">Produtos</a></li>
+              <li class="hd-gui nav-item"><a class="nav-link" href="#">Sobre</a></li>
+              <li class="hd-gui nav-item"><a class="nav-link" href="#">Suporte</a></li>
+              <li class="hd-gui nav-item"><a class="nav-link" href="#">Contato</a></li>
             </ul>
           </div>
         </div>
-        <form id="busca" class="">
-          <input class="b-left-radius-1 w-23 pd-left-2 no-border no-outline mg-right-0" type="text" name="input"
-            id="input" placeholder="Digite o produto que deseja pesquisar" />
-          <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 bg-whitee no-outline">
-            <i class="fas fa-search"></i>
-          </button>
+        <form id="busca">
+          <div class="input-container">
+            <input class="b-left-radius-1 w-23 pd-left-2 no-border no-outline mg-right-0" type="text" name="input"
+              id="input" placeholder="Digite o produto que deseja pesquisar" />
+            <button type="submit" class="b-right-radius-1 mg-left--05 no-border pd-right-1 no-outline">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </form>
         <li class="nav-item rmv-st">
           <a class="nav-link" href="#">
@@ -681,9 +679,9 @@
 
   <footer class="rodape py-5">
     <div class="roww">
-      <div class="col-6 col-md wd-gui">
-        <h5>Características</h5>
-        <ul class="list-unstyled text-small">
+      <div class="col-md wd-gui">
+        <h5 class="fontt">Características</h5>
+        <ul class="list-unstyled text-small fontt">
           <li>
             <a class="link-secondary text-decoration-none" href="#">Coisas legais</a>
           </li>
@@ -698,9 +696,9 @@
           </li>
         </ul>
       </div>
-      <div class="col-6 col-md">
-        <h5>Recursos</h5>
-        <ul class="list-unstyled text-small">
+      <div class="col-md wd-gui">
+        <h5 class="fontt">Recursos</h5>
+        <ul class="list-unstyled text-small fontt">
           <li>
             <a class="link-secondary text-decoration-none" href="#">Nome do recurso</a>
           </li>
@@ -715,9 +713,9 @@
           </li>
         </ul>
       </div>
-      <div class="col-6 col-md">
-        <h5>Recursos</h5>
-        <ul class="list-unstyled text-small">
+      <div class="col-md wd-gui">
+        <h5 class="fontt">Recursos</h5>
+        <ul class="list-unstyled text-small fontt">
           <li>
             <a class="link-secondary text-decoration-none" href="#">Negócios</a>
           </li>
@@ -732,9 +730,9 @@
           </li>
         </ul>
       </div>
-      <div class="col-6 col-md">
-        <h5>Sobre</h5>
-        <ul class="list-unstyled text-small">
+      <div class="col-md wd-gui">
+        <h5 class="fontt">Sobre</h5>
+        <ul class="list-unstyled text-small fontt">
           <li>
             <a class="link-secondary text-decoration-none" href="#">Equipe</a>
           </li>
