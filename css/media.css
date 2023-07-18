@@ -1,0 +1,457 @@
+/* Tela pequena (smartphones) */
+@media screen and (max-width: 425px) {
+  #scroll-span {
+    font-size: 25px;
+  }
+
+  .roww {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .wd-gui {
+    width: 100%;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .mg-gui {
+    margin-bottom: 5vw;
+  }
+
+  .font {
+    font-size: 2vw;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .produto-item {
+    width: 60vw;
+  }
+
+  .produto-nome {
+    width: 55.5vw;
+  }
+
+  .produto-imagem {
+    width: 230px;
+    height: 200px;
+  }
+
+  .produto-preco {
+    font-size: 3vw;
+  }
+
+  .tituloProd {
+    font-size: 1.5rem;
+  }
+
+  #busca {
+    width: 65vw;
+  }
+
+  #input {
+    width: 50vw;
+  }
+
+  .mg-top-03 {
+    margin-top: 0.3vw;
+  }
+
+  .mg-right-1 {
+    margin-right: 1vw;
+  }
+
+  .b-left-radius-1 {
+    border-radius: 1vw 0vw 0vw 1vw;
+  }
+
+  .b-w-23 {
+    border-width: 23vw;
+  }
+
+  .pd-left-2 {
+    padding-left: 2vw;
+  }
+
+  .no-border {
+    border-color: #00000000;
+  }
+
+  .no-outline {
+    outline: none;
+  }
+
+  .mg-right-0 {
+    margin-right: 0;
+  }
+
+  .b-right-radius-1 {
+    border-radius: 0vw 1vw 1vw 0vw;
+  }
+
+  .mg-left--05 {
+    margin-left: -0.5vw;
+  }
+
+  .no-border {
+    border-color: #00000000;
+  }
+
+  .pd-right-1 {
+    padding-right: 1vw;
+  }
+
+  .bg-whitee {
+    background-color: #fff;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 0;
+  }
+
+  .button-arrow {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .button-arrow.reverse::after {
+    content: "←";
+    margin-left: 5px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content3 {
+    width: 95vw;
+    margin-top: 4vw;
+  }
+
+  .results-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product {
+    width: 90vw;
+  }
+
+  .product img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    margin-right: 3vw;
+  }
+
+  main {
+    display: none;
+  }
+
+  #btn-filtros {
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #filtros {
+    margin: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .titulo {
+    text-align: left;
+    margin-bottom: 2vw;
+  }
+
+  .fl-gui {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4vw;
+  }
+}
+
+/* Tela média (tablets) */
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  #scroll-span {
+    font-size: 25px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .mg-gui {
+    margin-bottom: 5vw;
+  }
+
+  .font {
+    font-size: 2vw;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .produto-item {
+    width: 36vw;
+  }
+
+  .produto-nome {
+    width: 28.5vw;
+    font-size: 2vw;
+  }
+
+  .produto-preco {
+    font-size: 2vw;
+  }
+
+  .tituloProd {
+    font-size: 2.5rem;
+  }
+
+  #busca {
+    width: 65vw;
+  }
+
+  #input {
+    width: 50vw;
+  }
+
+  .mg-top-03 {
+    margin-top: 0.3vw;
+  }
+
+  .mg-right-1 {
+    margin-right: 1vw;
+  }
+
+  .b-left-radius-1 {
+    border-radius: 1vw 0vw 0vw 1vw;
+  }
+
+  .b-w-23 {
+    border-width: 23vw;
+  }
+
+  .pd-left-2 {
+    padding-left: 2vw;
+  }
+
+  .no-border {
+    border-color: #00000000;
+  }
+
+  .no-outline {
+    outline: none;
+  }
+
+  .mg-right-0 {
+    margin-right: 0;
+  }
+
+  .b-right-radius-1 {
+    border-radius: 0vw 1vw 1vw 0vw;
+  }
+
+  .mg-left--05 {
+    margin-left: -0.5vw;
+  }
+
+  .no-border {
+    border-color: #00000000;
+  }
+
+  .pd-right-1 {
+    padding-right: 1vw;
+  }
+
+  .bg-whitee {
+    background-color: #fff;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 0;
+  }
+
+  .button-arrow {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .button-arrow.reverse::after {
+    content: "←";
+    margin-left: 5px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content3 {
+    width: 95vw;
+    margin-top: 4vw;
+  }
+
+  .results-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product {
+    width: 90vw;
+  }
+
+  .product img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    margin-right: 3vw;
+  }
+
+  main {
+    margin-bottom: 5vw;
+  }
+
+  #btn-filtros {
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #filtros {
+    margin: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .titulo {
+    text-align: left;
+    margin-bottom: 2vw;
+  }
+
+  .fl-gui {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/* Tela média/grande (laptops e desktops) */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  #scroll-span {
+    font-size: 25px;
+  }
+
+  .mg-gui {
+    margin-bottom: 2vw;
+  }
+
+  img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .produto-item {
+    width: 15vw;
+  }
+
+  .produto-imagem {
+    width: 185px;
+    height: 185px;
+  }
+
+  .produto-nome {
+    width: 13.5vw;
+    font-size: 0.9vw;
+  }
+
+  .produto-preco {
+    margin-top: 5px;
+    color: #888;
+  }
+
+  .tituloProd {
+    font-size: 1.5rem;
+  }
+
+  aside {
+    width: 16vw;
+  }
+
+  .product {
+    margin-right: 0.5vw;
+  }
+
+  .product img {
+    width: 12vw;
+  }
+
+  .product p {
+    font-size: 1vw;
+  }
+
+  .content2 {
+    gap: 5.5vw;
+  }
+
+  .baner {
+    height: 39.5vw;
+  }
+
+  .roww {
+    padding: 0vw 9.5vw;
+  }
+}
