@@ -168,6 +168,7 @@ h2 {
 .product p {
   text-align: left;
   font-weight: bold;
+  font-style: italic;
 }
 
 .baner {
@@ -192,7 +193,7 @@ h2 {
 main {
   display: flex;
   flex: 1;
-  margin-bottom: 6vw;
+  margin-bottom: 2vw;
 }
 
 #baner {
@@ -367,8 +368,6 @@ input[type="checkbox"] {
   background-color: #fff;
 }
 
-
-
 /* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
 
 /* Estilizando a barra de rolagem */
@@ -434,14 +433,3 @@ input[type="checkbox"] {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
-
-
-
-
-
-
-
-
-
-
-

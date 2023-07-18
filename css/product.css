@@ -25,7 +25,7 @@
   margin-top: calc(-1 * var(--bs-gutter-y));
 }
 
-.icon-link>.bi {
+.icon-link > .bi {
   width: 0.75em;
   height: 0.75em;
 }
@@ -76,12 +76,34 @@
   background-color: #e5e5e5;
 }
 
-.flex-equal>* {
+.flex-equal > * {
   flex: 1;
 }
 
 @media (min-width: 768px) {
-  .flex-md-equal>* {
+  .flex-md-equal > * {
     flex: 1;
   }
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-left: 4rem;
+}
+
+.button-arrow {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-arrow.reverse::after {
+  content: "←";
+  margin-left: 5px;
 }
