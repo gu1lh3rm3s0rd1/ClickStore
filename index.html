@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="shortcut icon" href="img/shopping-cart.png" type="image/x-icon">
   <title>Document</title>
 
   <script src="js/index.js"></script>
@@ -22,7 +23,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
-<h1>IURI</h1>
+
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
     <symbol id="check2" viewBox="0 0 16 16">
@@ -509,15 +510,95 @@
   </div>
 
   <div id="conteudo" class="content">
-    <a class="button" href="index.html">
-      <span class="button-arrow reverse"></span>
-      Voltar
-    </a>
+    <div class="fl-gui">
+      <a class="button" href="index.html">
+        <span class="button-arrow reverse"></span>
+        Voltar
+      </a>
+
+      <button id="btn-filtros">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 15.4l6-6.6V4H6v4.8l6 6.6zM6 18h12v2H6z" />
+        </svg>
+        Filtros
+      </button>
+    </div>
+
+    <div id="filtros" class="hidden">
+      <h2 class="titulo">Classificar por: </h2>
+      <ul>
+        <li>
+          <input type="checkbox" name="filtro-preco" />
+          <label for="preco">Preço</label>
+        </li>
+        <li>
+          <input type="checkbox" name="filtro-categoria" />
+          <label for="categoria">Categoria</label>
+        </li>
+        <li>
+          <input type="checkbox" name="filtro-avaliacao" />
+          <label for="avaliacao">Avaliação</label>
+        </li>
+      </ul>
+
+      <h2 class="titulo">Tamanho: </h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="tamanho-p" />
+          <label for="tamanho-p">P</label>
+        </li>
+        <li>
+          <input type="checkbox" id="tamanho-m" />
+          <label for="tamanho-m">M</label>
+        </li>
+        <li>
+          <input type="checkbox" id="tamanho-g" />
+          <label for="tamanho-g">G</label>
+        </li>
+      </ul>
+
+      <h2 class="titulo">Valor: </h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="valor-abaixo-50" />
+          <label for="valor-abaixo-50">Até R$ 100</label>
+        </li>
+        <li>
+          <input type="checkbox" id="valor-50-100" />
+          <label for="valor-50-100">R$ 100 - R$ 200</label>
+        </li>
+        <li>
+          <input type="checkbox" id="valor-50-100" />
+          <label for="valor-acima-100">R$ 200 - R$ 300</label>
+        </li>
+        <li>
+          <input type="checkbox" id="valor-acima-100" />
+          <label for="valor-acima-100">R$ 300 - R$ 400</label>
+        </li>
+        <li>
+          <input type="checkbox" id="valor-acima-100" />
+          <label for="valor-acima-100">R$ 400 - R$ 500</label>
+        </li>
+        <li>
+          <input type="checkbox" id="valor-acima-100" />
+          <label for="valor-acima-100">Acima de R$ 500</label>
+        </li>
+      </ul>
+
+      <h2 class="titulo">Frete: </h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="frete-gratis" />
+          <label for="frete-gratis">Frete Grátis</label>
+        </li>
+      </ul>
+    </div>
 
     <div class="content2">
       <div class="sidebar">
         <aside>
-          <h2 class="titulo">Filtros</h2>
+          <h2 class="titulo">Filtros: </h2>
           <ul>
             <li>
               <input type="checkbox" id="cor-vermelho" />
@@ -533,7 +614,7 @@
             </li>
           </ul>
 
-          <h2 class="titulo">Tamanho</h2>
+          <h2 class="titulo">Tamanho: </h2>
           <ul>
             <li>
               <input type="checkbox" id="tamanho-p" />
@@ -549,7 +630,7 @@
             </li>
           </ul>
 
-          <h2 class="titulo">Valor</h2>
+          <h2 class="titulo">Valor: </h2>
           <ul>
             <li>
               <input type="checkbox" id="valor-abaixo-50" />
@@ -577,7 +658,7 @@
             </li>
           </ul>
 
-          <h2 class="titulo">Frete</h2>
+          <h2 class="titulo">Frete: </h2>
           <ul>
             <li>
               <input type="checkbox" id="frete-gratis" />
@@ -600,7 +681,7 @@
 
   <footer class="rodape py-5">
     <div class="roww">
-      <div class="col-6 col-md">
+      <div class="col-6 col-md wd-gui">
         <h5>Características</h5>
         <ul class="list-unstyled text-small">
           <li>
@@ -674,29 +755,23 @@
   <script src="js/index.js"></script>
 
   <script>
-    document
-      .getElementById("busca")
-      .addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+    document.getElementById("busca").addEventListener("submit", function (event) {
+      event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+      document.getElementById("conteudo").style.display = "block";
 
-        document.getElementById("conteudo").style.display = "block";
-      });
+    });
 
-    document
-      .getElementById("busca")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
+    document.getElementById("busca").addEventListener("submit", function (event) {
+      event.preventDefault();
+      document.getElementById("produto").style.display = "none";
 
-        document.getElementById("produto").style.display = "none";
-      });
+    });
 
-    document
-      .getElementById("busca")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
+    document.getElementById("busca").addEventListener("submit", function (event) {
+      event.preventDefault();
+      document.getElementById("baner").style.display = "none";
 
-        document.getElementById("baner").style.display = "none";
-      });
+    });
 
     $(document).ready(function () {
       $(".produto-nome").hover(
@@ -721,6 +796,12 @@
       window.scrollTo({
         top: document.documentElement.scrollHeight,
         behavior: 'smooth'
+      });
+    });
+
+    $(document).ready(function () {
+      $("#btn-filtros").click(function () {
+        $("#filtros").toggleClass("hidden");
       });
     });
   </script>
