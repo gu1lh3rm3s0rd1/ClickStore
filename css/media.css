@@ -34,6 +34,10 @@
     height: 200px;
   }
 
+  .produto {
+    margin-bottom: 20vw;
+  }
+
   .produto-item {
     width: 272px;
   }
@@ -42,15 +46,6 @@
     width: auto;
     margin-top: 0;
   }
-
-  /* .produto-imagem {
-    width: 230px;
-    height: 200px;
-  } */
-
-  /* .produto-preco {
-    font-size: 3vw;
-  } */
 
   .tituloProd {
     font-size: 1.5rem;
@@ -209,7 +204,6 @@
     align-items: center;
     margin-top: 4vw;
   }
-
 }
 
 /* Tela média (tablets) */
@@ -233,6 +227,10 @@
   img {
     width: 200px;
     height: 200px;
+  }
+
+  .produto {
+    margin-bottom: 15vw;
   }
 
   .produto-item {
@@ -406,7 +404,6 @@
   fontt {
     font-size: 1.1rem;
   }
-
 }
 
 /* Tela média/grande (laptops e desktops) */
