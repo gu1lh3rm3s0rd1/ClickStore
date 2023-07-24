@@ -51,15 +51,17 @@ function displayResults() {
     productElement.classList.add("product");
     productElement.innerHTML = `
       <img src="${product.thumbnail}" alt="${product.title}">
-      <div style='display: grid;
-                  justify-content: center;
-                  align-content: center;
-                  align-items: center;
-                  justify-items: start;'>
+      <div style='display: grid; justify-content: center; align-content: center; align-items: center; justify-items: start;'>
         <p>${product.title}</p>
         <p>R$ ${product.price}</p>
       </div>
     `;
+
+    productElement.addEventListener("click", function () {
+      // permalink é uma propriedae retornada da API que retorna a página original do produto no Mercado Livre
+      window.open(product.permalink, "_blank");
+    });
+
     resultsContainer.appendChild(productElement);
   });
 
