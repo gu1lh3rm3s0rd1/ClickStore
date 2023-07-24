@@ -60,21 +60,21 @@ h2 {
 .input-container {
   display: flex;
   align-items: center;
-  width: 100%; /* Defina a largura para 100% para que ocupe toda a largura do formulário */
-  max-width: 400px; /* Defina uma largura máxima para evitar que o formulário fique muito largo em telas grandes */
-  margin: 0 auto; /* Centralize o formulário na página */
-  background-color: #f5f5f5; /* Adicione uma cor de fundo para destacar o formulário */
-  border-radius: 5px; /* Adicione bordas arredondadas para um visual mais agradável */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 5px;
 }
 
 #input {
   flex: 1;
-  padding: 6px 12px; /* Aumente o espaçamento vertical para melhorar a aparência */
+  padding: 6px 12px;
   border: none;
 }
 
 button {
-  background-color: transparent; /* Torne o botão transparente para que a cor de fundo do container seja visível */
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -165,13 +165,13 @@ i {
 }
 
 .product img {
-  width: 10vw;
   margin-right: 1rem;
+  width: 90px;
+  height: 90px;
 }
 
 .product p {
   text-align: left;
-  font-weight: bold;
   font-style: italic;
 }
 
@@ -320,21 +320,10 @@ input[type="checkbox"] {
   font-weight: 700;
 }
 
-.mg-top-03 {
-  margin-top: 0.3vw;
-}
-
-.mg-right-1 {
-  margin-right: 1vw;
-}
-
 .b-left-radius-1 {
   border-radius: 1vw 0vw 0vw 1vw;
 }
 
-.b-w-23 {
-  border-width: 23vw;
-}
 
 .pd-left-2 {
   padding-left: 2vw;
@@ -354,14 +343,6 @@ input[type="checkbox"] {
 
 .b-right-radius-1 {
   border-radius: 0vw 1vw 1vw 0vw;
-}
-
-.no-border {
-  border-color: #00000000;
-}
-
-.bg-whitee {
-  background-color: #fff;
 }
 
 /* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
