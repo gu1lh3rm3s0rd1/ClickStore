@@ -131,6 +131,11 @@ i {
   text-align: center;
 }
 
+.logo {
+  width: 350px;
+  height: 350px;
+}
+
 .btn {
   background-color: #4caf50;
   color: white;
@@ -175,11 +180,6 @@ i {
   font-style: italic;
 }
 
-.baner {
-  height: 43.5vw;
-  width: 100%;
-}
-
 .background {
   background-color: black;
   color: #fff;
@@ -202,6 +202,8 @@ main {
 
 #baner {
   display: block;
+  background: #f5f5f5;
+  width: 100%;
 }
 
 .caixa-prod {
@@ -272,13 +274,14 @@ input[type="checkbox"] {
   overflow-x: auto;
   margin: 0vw 3vw;
   margin-bottom: 6vw;
+  background-color: #f5f5f5;
+  border-radius: 15px;
 }
 
 .produto-item {
   width: 17vw;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #e0e0e0;
   text-align: center;
   margin-left: 1vw;
   transition: transform 0.3s ease-in-out;
@@ -324,7 +327,6 @@ input[type="checkbox"] {
   border-radius: 1vw 0vw 0vw 1vw;
 }
 
-
 .pd-left-2 {
   padding-left: 2vw;
 }
@@ -339,6 +341,10 @@ input[type="checkbox"] {
 
 .mg-right-0 {
   margin-right: 0;
+}
+
+.mg-t {
+  margin-top: 2rem;
 }
 
 .b-right-radius-1 {
@@ -358,7 +364,7 @@ input[type="checkbox"] {
 
 ::-webkit-scrollbar-thumb {
   background-color: #888;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -370,32 +376,6 @@ input[type="checkbox"] {
 }
 
 /* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
-
-#scroll-span {
-  display: inline-block;
-  animation: scrollAnimation 2s infinite;
-  font-size: 40px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  color: #000000;
-  cursor: pointer;
-}
-
-@keyframes scrollAnimation {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 
 .bi {
   vertical-align: -0.125em;

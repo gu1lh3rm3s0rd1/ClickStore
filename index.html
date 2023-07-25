@@ -83,8 +83,8 @@
               </li>
             </ul>
             <ul class="hd-gui navbar-nav flex-grow-1 justify-content-between">
-              <li class="hd-gui nav-item"><a class="nav-link" href="#menu">Home</a></li>
-              <li class="hd-gui nav-item"><a class="nav-link" href="#produto">Produtos</a></li>
+              <li class="hd-gui nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="hd-gui nav-item"><a class="nav-link" href="#">Produtos</a></li>
               <li class="hd-gui nav-item"><a class="nav-link" href="#">Sobre</a></li>
               <li class="hd-gui nav-item"><a class="nav-link" href="#">Suporte</a></li>
               <li class="hd-gui nav-item"><a class="nav-link" href="#">Contato</a></li>
@@ -111,25 +111,14 @@
   </header>
 
   <main id="menu">
-    <div id="baner" class="position-relative overflow-hidden text-center bg-body-tertiary baner svg">
-      <div class="col-md-6 p-lg-5 mx-auto my-5">
-        <h1 class="display-3 fw-bold mg-gui font">
-          # Nome da loja
-        </h1>
-        <h3 class="fw-normal text-muted mb-3 font">
+    <div id="baner" class="position-relative overflow-hidden text-center bg-body-tertiary">
+      <div class="col-md-6 p-lg-5 mx-auto my-5 fit-logo">
+        <img class="logo" src="img/logowallpaper.png" alt="" srcset="">
+        <h3 class="fw-normal text-muted mb-3 font mg-t">
           Bem-vindo à nossa loja online! Aqui você encontrará uma ampla seleção de produtos de alta qualidade.
         </h3>
-
-        <div class="d-flex gap-3 justify-content-center lead fw-normal mg-gui">
-          <a class="icon-link font" href="#"># Destaques<svg class="bi">
-              <use xlink:href="#chevron-right" />
-            </svg></a>
-          <a class="icon-link font" href="#"># Produto #1<svg class="bi">
-              <use xlink:href="#chevron-right" />
-            </svg></a>
-        </div>
       </div>
-      <span id="scroll-span">&#8595;</span>
+    </div>
     </div>
   </main>
 
@@ -747,6 +736,20 @@
           </li>
         </ul>
       </div>
+      <div class="col-md wd-gui">
+        <h5 class="fontt">Redes Sociais</h5>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/mwlite/in/guilherme-benjamim-sordi-ba04551a1" target="_blank">
+            <img src="img/linkedin-ico.png" class="social-media-img" alt="" />
+          </a>
+          <a href="https://github.com/gu1lh3rm3s0rd1?tab=repositories" target="_blank">
+            <img src="img/github-ico.png" class="social-media-img" alt="" />
+          </a>
+          <a href="https://www.instagram.com/guilhermesordi_/" target="_blank">
+            <img src="img/insta-ico.png" class="social-media-img social-media-img-none" alt="" />
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -786,15 +789,6 @@
 
         }
       );
-    });
-
-    var scrollSpan = document.getElementById('scroll-span');
-
-    scrollSpan.addEventListener('click', function () {
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: 'smooth'
-      });
     });
 
     $(document).ready(function () {

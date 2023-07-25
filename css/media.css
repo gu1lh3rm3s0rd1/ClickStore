@@ -1,9 +1,5 @@
 /* Tela pequena (smartphones) */
 @media screen and (max-width: 425px) {
-  #scroll-span {
-    font-size: 25px;
-  }
-
   .roww {
     display: grid;
     text-align: center;
@@ -64,7 +60,6 @@
   .b-left-radius-1 {
     border-radius: 1vw 0vw 0vw 1vw;
   }
-
 
   .pd-left-2 {
     padding-left: 2vw;
@@ -179,14 +174,25 @@
     align-items: center;
     margin-top: 4vw;
   }
+
+  .social-media {
+    margin-top: 0;
+    display: flex;
+    gap: 18px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media-img {
+    margin-right: 0;
+    width: 35px;
+    height: 35px;
+  }
 }
 
 /* Tela média (tablets) */
 @media screen and (min-width: 430px) and (max-width: 768px) {
-  #scroll-span {
-    font-size: 25px;
-  }
-
   .container {
     width: 95%;
   }
@@ -236,7 +242,6 @@
   .b-left-radius-1 {
     border-radius: 1vw 0vw 0vw 1vw;
   }
-
 
   .pd-left-2 {
     padding-left: 2vw;
@@ -346,22 +351,42 @@
   }
 
   .roww {
-    padding: 0vw 8vw;
+    padding: 0vw 2vw;
   }
 
   fontt {
-    font-size: 1.1rem;
+    font-size: 17px;
+  }
+
+  .social-media {
+    margin-top: 0;
+    display: grid;
+    gap: 8px;
+  }
+
+  .social-media-img {
+    margin-right: 0;
+    width: 35px;
+    height: 35px;
   }
 }
 
 /* Tela média/grande (laptops e desktops) */
 @media screen and (min-width: 769px) and (max-width: 1400px) {
-  #scroll-span {
-    font-size: 25px;
-  }
-
   #busca {
     margin-left: 3vw;
+  }
+
+  #baner {
+    height: 31vw;
+  }
+
+  .fit-logo {
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mg-gui {
@@ -393,7 +418,7 @@
   }
 
   .tituloProd {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 
   aside {
@@ -416,11 +441,24 @@
     gap: 5.5vw;
   }
 
-  .baner {
-    height: 39.5vw;
-  }
-
   .roww {
     padding: 0vw 9.5vw;
+  }
+
+  .social-media-img {
+    margin-right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo {
+    width: 185px;
+    height: 185px;
+  }
+
+  .font {
+    font-style: italic;
+    font-size: 22px;
+    /* width: 100%; */
   }
 }
