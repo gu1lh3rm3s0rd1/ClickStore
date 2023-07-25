@@ -1,5 +1,5 @@
 /* Tela pequena (smartphones) */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .roww {
     display: grid;
     text-align: center;
@@ -22,7 +22,7 @@
   }
 
   .font {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   img {
@@ -135,7 +135,12 @@
   }
 
   main {
-    display: none;
+    display: block;
+  }
+
+  #baner {
+    display: flex;
+    height: 32vw;
   }
 
   #btn-filtros {
@@ -188,6 +193,20 @@
     margin-right: 0;
     width: 35px;
     height: 35px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .fit-logo {
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 20vw;
   }
 }
 
