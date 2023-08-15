@@ -1,11 +1,8 @@
 /* Tela pequena (smartphones) */
 @media screen and (max-width: 430px) {
-  .roww {
-    display: grid;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
+  .mgx-5 {
+    margin-right: 0rem;
+    margin-left: 0rem;
   }
 
   .wd-gui {
@@ -49,8 +46,6 @@
 
   #busca {
     width: 65vw;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 
   #input {
@@ -216,6 +211,11 @@
     width: 95%;
   }
 
+  .mgx-5 {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
   .mg-gui {
     margin-bottom: 5vw;
   }
@@ -369,10 +369,6 @@
     align-items: center;
   }
 
-  .roww {
-    padding: 0vw 2vw;
-  }
-
   fontt {
     font-size: 17px;
   }
@@ -392,8 +388,13 @@
 
 /* Tela média/grande (laptops e desktops) */
 @media screen and (min-width: 769px) and (max-width: 1400px) {
-  #busca {
+  /* #busca {
     margin-left: 3vw;
+  } */
+
+  .mgx-5 {
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
 
   #baner {
@@ -458,10 +459,6 @@
 
   .content2 {
     gap: 5.5vw;
-  }
-
-  .roww {
-    padding: 0vw 9.5vw;
   }
 
   .social-media-img {

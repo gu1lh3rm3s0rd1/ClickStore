@@ -10,6 +10,15 @@
   left: 0;
 }
 
+.fontt {
+  color: white;
+}
+
+.mgx-5 {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
 .rmv-st {
   list-style: none;
 }
@@ -90,10 +99,6 @@ i {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 20vw;
-  /* margin-top: 20px; */
-  margin-left: 100px;
-  margin-right: 50px;
 }
 
 .results-container {
