@@ -19,6 +19,29 @@
     crossorigin="anonymous"></script>
 </head>
 
+<style>
+  .social-media {
+    margin-top: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media a img {
+    transition: filter 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  }
+
+  .social-media-img {
+    margin-right: 1rem;
+    width: 1.5rem;
+  }
+
+  .social-media-img-none {
+    margin-right: 0;
+  }
+</style>
+
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
     <symbol id="check2" viewBox="0 0 16 16">
@@ -663,59 +686,35 @@
     </div>
   </div>
 
-  <footer class="bg-dark container-fluid py-3">
-    <div class="d-lg-flex justify-content-around mx-5 text-center d-sm-grid d-md-flex">
-      <div class="col-md wd-gui">
-        <h5 class="fontt">Características</h5>
-        <ul class="list-unstyled text-small fontt mb-lg-0">
-          <li><a class="link-secondary text-decoration-none" href="#">Coisas legais</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Recurso aleatório</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Recurso da equipe</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Coisas para desenvolvedores</a></li>
-        </ul>
+  <footer class="bg-dark container-fluid py-5">
+    <div class="d-lg-flex justify-content-between align-items-center text-center d-sm-grid d-md-flex mx-5">
+      <div id="rights" class="text-white mb-4 mb-sm-0">
+        &copy; 2024 Guilherme Benjamim Sordi. Todos os direitos reservados.
       </div>
-      <div class="col-md wd-gui">
-        <h5 class="fontt">Recursos</h5>
-        <ul class="list-unstyled text-small fontt mb-0">
-          <li><a class="link-secondary text-decoration-none" href="#">Nome do recurso</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Recurso</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Outro recurso</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Recurso final</a></li>
-        </ul>
-      </div>
-      <div class="col-md wd-gui">
-        <h5 class="fontt">Recursos</h5>
-        <ul class="list-unstyled text-small fontt mb-0">
-          <li><a class="link-secondary text-decoration-none" href="#">Negócios</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Educação</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Governo</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Jogos</a></li>
-        </ul>
-      </div>
-      <div class="col-md wd-gui">
-        <h5 class="fontt">Sobre</h5>
-        <ul class="list-unstyled text-small fontt mb-0">
-          <li><a class="link-secondary text-decoration-none" href="#">Equipe</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Privacidade</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Localizações</a></li>
-          <li><a class="link-secondary text-decoration-none" href="#">Termos</a></li>
-        </ul>
-      </div>
-      <div class="col-md wd-gui">
-        <h5 class="fontt">Redes Sociais</h5>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/mwlite/in/guilherme-benjamim-sordi-ba04551a1" target="_blank">
-            <img src="img/linkedin-ico.png" class="social-media-img" alt="" />
-          </a>
-          <a href="https://github.com/gu1lh3rm3s0rd1?tab=repositories" target="_blank">
-            <img src="img/github-ico.png" class="social-media-img" alt="" />
-          </a>
-          <a href="https://www.instagram.com/guilhermesordi_/" target="_blank">
-            <img src="img/insta-ico.png" class="social-media-img social-media-img-none" alt="" />
-          </a>
+      <div class="d-flex ms-1 align-items-center">
+        <div id="about" class="me-auto">
+          <h6 class="text-white">
+            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white"
+              href="https://guilhermebenjamin.netlify.app/" target="_blank">
+              Sobre
+            </a>
+          </h6>
+        </div>
+        <div id="social" class="ms-5">
+          <h6 class="text-white">Redes Sociais</h6>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/mwlite/in/guilherme-benjamim-sordi-ba04551a1" target="_blank">
+              <img src="img/linkedin-ico.png" class="social-media-img" alt="" />
+            </a>
+            <a href="https://github.com/gu1lh3rm3s0rd1?tab=repositories" target="_blank">
+              <img src="img/github-ico.png" class="social-media-img" alt="" />
+            </a>
+            <a href="https://www.instagram.com/guilhermesordi_/" target="_blank">
+              <img src="img/insta-ico.png" class="social-media-img social-media-img-none" alt="" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
   </footer>
 
   <script src="js/index.js"></script>
